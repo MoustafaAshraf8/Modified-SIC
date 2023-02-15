@@ -6,7 +6,7 @@ import Operation.Parser as parser
 import Operation.AddressCounter as ad
 import Class.ProgramClass as program
 import Operation.SymboleTable as st
-import OPcode as op
+import Operation.OPcode as op
 import HTErecord as hte
 
 files = glob.glob('./Product/*')
