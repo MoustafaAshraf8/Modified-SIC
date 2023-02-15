@@ -85,6 +85,6 @@ def OPcode(prog = Program.Program):
     pass2 = pd.DataFrame(DataList)
     pass2.replace(to_replace = np.nan, value ="*", inplace=True)
     prog.df = pass2
-    #pass1.to_csv("Product/Pass1.txt", sep="\t")
-    pass2.to_excel("./Product/Pass2.xlsx", encoding='utf-8', index=False)
+    #pass1.to_csv("Result/Pass1.txt", sep="\t")
+    pass2.to_excel("./Result/Pass2.xlsx", encoding='utf-8', index=False)
     return prog

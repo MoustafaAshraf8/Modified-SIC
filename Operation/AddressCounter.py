@@ -67,8 +67,8 @@ def AddressCounter(prog = Program.Program):
             line = Increment(line, value)
 
     pass1 = pd.DataFrame(DataList)
-    #pass1.to_csv("Product/Pass1.txt", sep="\t")
-    pass1.to_excel("./Product/Pass1.xlsx", encoding='utf-8', index=False)
+    #pass1.to_csv("Result/Pass1.txt", sep="\t")
+    pass1.to_excel("./Result/Pass1.xlsx", encoding='utf-8', index=False)
     prog.df = pd.DataFrame(DataList)
     prog.HeaderList.insert(0,"Address")
     

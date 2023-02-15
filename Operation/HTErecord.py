@@ -64,8 +64,9 @@ def HTE(prog = Program.Program):
             hte.append(x)   # add string record
             t.clear()
             f=s
+            continue
       
-      if subt < int('00001E',16):
+      elif subt < int('00001E',16):
             #print(DataList[s][4])
             #print("1111111111111111111")
             #print(t)
@@ -98,7 +99,7 @@ def HTE(prog = Program.Program):
    # hte.insert(1,T)
    hte.append(Erecord)   # add string
    HTE = pd.DataFrame(hte)
-   HTE.to_csv("Product/HTERecord.txt",sep='\t',index=False)
+   HTE.to_csv("Result/HTERecord.txt",sep='\t',index=False)
    print(HTE.to_string())
 
    return prog

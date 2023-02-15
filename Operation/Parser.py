@@ -44,10 +44,10 @@ Format1 = dict({
 })
 
 def CreateDefault(df):
-    df.to_excel("./Product/1-default.xlsx", encoding='utf-8', index=False)
+    df.to_excel("./Result/1-default.xlsx", encoding='utf-8', index=False)
 
 def CreateIntermediate(df):
-    df.to_excel("./Product/2-intermediate.xlsx", encoding='utf-8', index=False)
+    df.to_excel("./Result/2-intermediate.xlsx", encoding='utf-8', index=False)
     
 def DataToList(df = pd.DataFrame):
     DataList = df.values.tolist()
@@ -83,7 +83,7 @@ def ParseFile(FilePath):
         HeaderList = GetHeader(df)
         
         
-        df.to_excel("Product/intermediate.xlsx", encoding='utf-8', index=False)
+        df.to_excel("Result/intermediate.xlsx", encoding='utf-8', index=False)
         x = program.Program(df, DataList, HeaderList, Format1, Format3)
         return x
     except EX.LessColumns:

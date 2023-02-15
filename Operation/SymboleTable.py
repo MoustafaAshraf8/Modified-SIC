@@ -15,6 +15,6 @@ def SymbTable(prog = Program.Program):
             if str(row[1] )== 'STL':
                 print("--------------------------STL-----------------------------")
             SymbList.append([row[1], row[0]])
-    pd.DataFrame(SymbList).to_excel("./Product/SymboleTable.xlsx", encoding='utf-8', index=False)
+    pd.DataFrame(SymbList).to_excel("./Result/SymboleTable.xlsx", encoding='utf-8', index=False)
     prog.Symb = dict(SymbList)
     return prog
